@@ -1,0 +1,39 @@
+
+<!-- <input class="my-phone" [(ngModel)] = "myphone" /> -->
+<div class="table-wrapper">
+    <div class="table-item">
+        <div>
+            <h3>Brand</h3>
+        </div>
+        <div>
+            <h3>Phone Name</h3>
+        </div>
+        <div>
+            <h3>Image</h3>
+        </div>
+        <div>
+            <h3>Button</h3>
+        </div>
+    </div>
+    <div class="table-item" *ngFor="let item of myappc | keyvalue">
+        
+        <div>
+            <div>{{ item.value.brand }}</div>
+        </div>
+        <div>
+            <div>{{ item.value.phone }}</div>
+        </div>
+        <div>
+            <div>{{ item.value.image }}</div>
+        </div>
+        <div>
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
